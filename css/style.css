@@ -1,16 +1,35 @@
+/* Позволяет не вылезать за размеры родительского элемента */
+
 * {
     box-sizing: border-box;
 }
 
+
+/* Убераем подчёркивание */
+
 a {
     text-decoration: none;
 }
+
+
+/* Убераем стили списка */
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+
+/* Ограничиваем размеры контента на странице */
+
+.container {
+    width: 1770px;
+    margin: 0 auto;
+}
+
+
+/* Главная навигация */
 
 .header-nav {
     width: 1920px;
@@ -41,9 +60,21 @@ ul {
     margin-right: 85px;
 }
 
+.header-nav_nav-list-item-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
 .header-nav__nav-search {
     margin-right: 75px;
 }
+
+
+/* Секция hero */
 
 .hero {
     height: 620px;
@@ -52,9 +83,272 @@ ul {
     margin-bottom: 100px;
 }
 
+.hero__container {
+    height: 100%;
+    background-image: url(/img/hero-bac-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero__descriprion {
-    width: 840px;
-    height: 420px;
-    margin-top: 100px;
-    margin-left: 80px;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+.hero__title {
+    width: 900px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.hero__text {
+    width: 900px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.hero__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 78px;
+    background-color: #FF9900;
+}
+
+.hero__link-btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.4581px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.hero__scroll-image {
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 85px;
+}
+
+
+/* Cекция О нас */
+
+.about {
+    margin-bottom: 100px;
+}
+
+.about__container {
+    height: 945px;
+}
+
+.about__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.about__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    color: #333333;
+    width: 1235px;
+    margin-bottom: 50px;
+}
+
+
+/* Секция about, стили карточек */
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 622px;
+}
+
+.about__card-1 {
+    width: 860px;
+    height: 622px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(/img/about__card-1.jpg);
+}
+
+.about__card-2,
+.about__card-3 {
+    width: 870px;
+    height: 295px;
+    border: 1px solid #CACACA;
+}
+
+.about__card-1-img,
+.about__card-2-img {
+    width: 190px;
+    height: 165px;
+    margin-left: 60px;
+}
+
+.about__card-item {
+    display: flex;
+    align-items: center;
+}
+
+.about__card-2-description {
+    width: 450px;
+}
+
+.about__card-item-wrap-1 {
+    display: flex;
+    margin-top: 426px;
+    height: 196px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about__card-1-info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    color: #FFFFFF;
+    width: 454px;
+}
+
+.about__card-1-link-style {
+    width: 175px;
+    height: 60px;
+    border: 3px solid #FF9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__card-1-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about__card-item-wrap-2 {
+    margin-left: 50px;
+}
+
+.about__card-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.about__card-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    width: 450px;
+}
+
+
+/* Секция how */
+
+.how {
+    margin-bottom: 100px;
+}
+
+.how__container {
+    height: 650px;
+    display: flex;
+}
+
+.how__block-1 {
+    width: 758px;
+}
+
+.how__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.how__steps-wrap {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.how__steps {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #333333;
+}
+
+.how__steps:not(:last-child) {
+    margin-right: 85px;
+}
+
+.how__consult {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.how__paragraph {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.how__button-wrap {
+    display: flex;
+    width: 355px;
+    justify-content: space-around;
 }
