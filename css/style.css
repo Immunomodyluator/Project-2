@@ -350,5 +350,92 @@ ul {
 .how__button-wrap {
     display: flex;
     width: 355px;
-    justify-content: space-around;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.how__item-1 {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF9900;
+}
+
+.how__button-link-1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.how__item-2 {
+    width: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333333;
+}
+
+.how__button-link-1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.how__block-2 {
+    margin-left: 142px;
+    margin-top: 186px;
+}
+
+
+/* Секция faq */
+
+.faq {
+    margin-bottom: 100px;
+}
+
+.faq__container {
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faq__list-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.faq__list-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #CACACA;
+}
+
+.faq__list {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    color: #333333;
 }
