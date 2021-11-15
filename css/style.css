@@ -439,3 +439,84 @@ ul {
     /* identical to box height, or 133% */
     color: #333333;
 }
+
+.footer {
+    height: 595px;
+    background: #222222;
+}
+
+.footer__section {
+    display: flex;
+}
+
+
+/* Стили перового блока */
+
+.footer__block-1 {
+    margin-top: 50px;
+    margin-left: 75px;
+    width: 254px;
+    margin-right: 350px;
+}
+
+.footer__block-logo {
+    margin-bottom: 20px;
+}
+
+.footer__nav {
+    margin-bottom: 90px;
+}
+
+.footer__list {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    color: #CACACA;
+}
+
+.footer__nav-social {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+
+
+/* Стили второго блока */
+
+.footer__block-2 {
+    width: 570px;
+    margin-right: 256px;
+}
+
+.footer__description-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    justify-content: space-between;
+}
+
+#footer__text {
+    height: 150px;
+    margin-bottom: 32px;
+}
+
+.footer__button {
+    background: #FF9900;
+    width: 269px;
+    height: 58px;
+}
+
+
+/* Стили  третьего блока */
+
+.footer__block-3 {
+    width: 363px;
+}

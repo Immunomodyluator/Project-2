@@ -202,7 +202,7 @@
     <footer class="footer">
         <section class="footer__section">
             <div class="footer__block-1">
-                <img src="/img/footer__logo.svg" alt="logo">
+                <img class="footer__block-logo" src="/img/footer__logo.svg" alt="logo">
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item">
@@ -228,15 +228,22 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="footer__nav-social">
+                    <img src="/img/facebook.svg" alt="facebook">
+                    <img src="/img/vk.svg" alt="vk">
+                    <img src="/img/instagram.svg" alt="instagram">
+                </div>
             </div>
             <div class="footer__block-2">
                 <div class="footer__description-form">
                     Оставить заявку
                 </div>
-                <input type="text" name="Name" id="footer__name" placeholder="Фамилия, Имя, Отчество*">
-                <input type="email" name="MAIL" id="footer__email" placeholder="E-mail*">
-                <input type="text" name="Text" id="footer__text" placeholder="Сообщение">
-                <button type="submit">Отправить данные</button>
+                <div class="footer__form">
+                    <input type="text" name="Name" id="footer__name" placeholder="Фамилия, Имя, Отчество*">
+                    <input type="email" name="MAIL" id="footer__email" placeholder="E-mail*">
+                    <input type="text" name="Text" id="footer__text" placeholder="Сообщение">
+                </div>
+                <button class="footer__button" type="submit">Отправить данные</button>
                 <div class="footer__checkbox-wrap">
                     <input type="checkbox" name="Check" id="footer__checkbox">
                     <div class="footer__checkbox-text">
